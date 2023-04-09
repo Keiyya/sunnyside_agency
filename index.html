@@ -22,7 +22,79 @@
       href="images/favicon-32x32.png"
       type="image/x-icon"
     />
+    <script defer src="js/app.js"></script>
     <title>Sunnyside Agency</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="container p-5 mx-auto">
+        <nav class="relative flex items-center justify-between">
+          <img src="images/logo.svg" alt="" />
+          <ul class="hidden space-x-6 text-white font-light md:flex">
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="uppercase bg-white text-black p-3 px-6 rounded-full font-light hover:text-white"
+                id="nav-btn"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+
+          <!-- Hamburger Icon -->
+          <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+
+          <ul
+            id="menu"
+            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-7 font-bold text-vDarkGrayishBlue bg-white sm:w-auto sm:self-center top-3.5 left-6 right-6 drop-shadow-md"
+          >
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Project</a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="uppercase bg-yellow text-black p-3 px-6 rounded-full font-light hover:text-white"
+                id="nav-btn"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Header Content -->
+        <div class="flex flex-col items-center justify-center text-center">
+          <h1
+            class="font-black uppercase tracking-wider text-5xl text-white leading-2 mt-28 md:mt-48 md:text-6xl"
+          >
+            We are creatives
+          </h1>
+          <img src="images/icon-arrow-down.svg" class="mt-24 md:mt-40" alt="" />
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
