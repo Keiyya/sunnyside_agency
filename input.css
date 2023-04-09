@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Fraunces', serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-image: url('../images/mobile/image-header.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+}
+
+@media (min-width: 768px) {
+  header {
+    background-image: url('../images/desktop/image-header.jpg');
+    height: 100vh;
+  }
+}
