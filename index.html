@@ -16,6 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="shortcut icon"
@@ -61,9 +68,10 @@
             <span class="hamburger-bottom"></span>
           </button>
 
+          <!-- Mobile Menu -->
           <ul
             id="menu"
-            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-7 font-bold text-vDarkGrayishBlue bg-white sm:w-auto sm:self-center top-3.5 left-6 right-6 drop-shadow-md"
+            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-7 font-bold text-vDarkGrayishBlue bg-white sm:w-auto sm:self-center top-3.5 left-6 right-6 drop-shadow-md transition-all ease-in-out delay-300"
           >
             <li>
               <a href="#">About</a>
@@ -77,8 +85,8 @@
             <li>
               <a
                 href="#"
-                class="uppercase bg-yellow text-black p-3 px-6 rounded-full font-light hover:text-white"
-                id="nav-btn"
+                class="uppercase bg-yellow text-black p-3 px-6 rounded-full font-light hover:text-grayishBlue"
+                id="mobile-btn"
               >
                 Contact
               </a>
@@ -275,7 +283,7 @@
         </div>
         <div>
           <img
-            src="images/mobile/image-gallery-orange.jpg.jpg"
+            src="images/mobile/image-gallery-orange.jpg"
             class="md:hidden"
             alt=""
           />
@@ -311,5 +319,30 @@
         </div>
       </div>
     </section>
+
+    <footer class="bg-moderateCyan">
+      <div
+        class="container mx-auto p-10 space-y-6 max-w-screen-xl flex flex-col items-center"
+      >
+        <img src="images/logo-footer.svg" alt="" />
+        <ul class="flex items-center space-x-10 text-cyan">
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+        </ul>
+        <div class="flex space-x-6 text-cyan">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

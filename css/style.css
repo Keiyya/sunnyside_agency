@@ -582,6 +582,10 @@ video {
   margin-bottom: 2.5rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -600,18 +604,6 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mb-16 {
-  margin-bottom: 4rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
 }
 
 .block {
@@ -678,10 +670,22 @@ video {
   gap: 1.75rem;
 }
 
+.space-x-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
 .space-y-7 > :not([hidden]) ~ :not([hidden]) {
@@ -702,6 +706,11 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.bg-moderateCyan {
+  --tw-bg-opacity: 1;
+  background-color: hsl(168 34% 41% / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -849,6 +858,20 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.delay-300 {
+  transition-delay: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 body {
   font-size: 18px;
   font-family: 'Barlow', sans-serif;
@@ -875,6 +898,10 @@ header {
 
 #nav-btn:hover {
   background-color: hsla(0, 0%, 100%, 0.39);
+}
+
+#mobile-btn:hover {
+  background-color: hsla(51, 100%, 49%, 0.664);
 }
 
 /* Hamburger Menu */
@@ -928,21 +955,26 @@ header {
 .designs {
   position: absolute;
   top: 66.666667%;
-  left: 4rem;
+  left: 1.25rem;
   text-align: center;
 }
 
 @media (min-width: 768px) {
   .designs {
     top: 50%;
+    left: 0.5rem;
   }
 }
 
 @media (min-width: 976px) {
   .designs {
     top: 66.666667%;
-    left: 10rem;
+    left: 25%;
   }
+}
+
+footer a {
+  font-family: 'Barlow', sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -955,6 +987,11 @@ header {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+.hover\:text-grayishBlue:hover {
+  --tw-text-opacity: 1;
+  color: hsl(210 4% 67% / var(--tw-text-opacity));
 }
 
 .hover\:decoration-8:hover {
@@ -1001,6 +1038,10 @@ header {
     order: 6;
   }
 
+  .md\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
   .md\:ml-24 {
     margin-left: 6rem;
   }
@@ -1011,10 +1052,6 @@ header {
 
   .md\:mt-48 {
     margin-top: 12rem;
-  }
-
-  .md\:mb-20 {
-    margin-bottom: 5rem;
   }
 
   .md\:block {

@@ -30,6 +30,10 @@ header {
   background-color: hsla(0, 0%, 100%, 0.39);
 }
 
+#mobile-btn:hover {
+  background-color: hsla(51, 100%, 49%, 0.664);
+}
+
 /* Hamburger Menu */
 .hamburger {
   cursor: pointer;
@@ -78,7 +82,11 @@ header {
 }
 
 .designs {
-  @apply absolute top-2/3 left-16 text-center md:top-1/2 lg:top-2/3 lg:left-40;
+  @apply absolute top-2/3 left-5 text-center md:top-1/2 md:left-2 lg:top-2/3 lg:left-1/4;
+}
+
+footer a {
+  font-family: 'Barlow', sans-serif;
 }
 
 @media (min-width: 768px) {
