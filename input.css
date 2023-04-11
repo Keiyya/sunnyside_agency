@@ -77,6 +77,10 @@ header {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
+.designs {
+  @apply absolute top-2/3 left-16 text-center md:top-1/2 lg:top-2/3 lg:left-40;
+}
+
 @media (min-width: 768px) {
   header {
     background-image: url('../images/desktop/image-header.jpg');
